@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لعبة الأسئلة 🎯</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>لعبة الأسئلة 🎯</h1>
+
+    <div id="question-container">
+      <p id="question">السؤال سيظهر هنا</p>
+      <div id="choices"></div>
+      <p id="timer">الوقت المتبقي: <span id="time">10</span> ثانية</p>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <h2>انتهت اللعبة! 🎉</h2>
+      <p>نتيجتك: <span id="final-score"></span></p>
+      <button onclick="resetGame()">إعادة اللعب 🔄</button>
+    </div>
+
+    <p>النتيجة الحالية: <span id="score">0</span></p>
+    <button id="next-btn" onclick="nextQuestion()">التالي ➡️</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
